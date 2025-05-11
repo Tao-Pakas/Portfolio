@@ -24,13 +24,16 @@
     --footer: #060F10;
 
 }
-Footer {
+footer {
     background-color: var(--footer);
     width: 100vw;
     padding: 3rem 0 1.5rem;
     color: var(--font-colour);
     height: auto;
     overflow: hidden;
+    margin-top: 0;
+    position: relative; 
+    z-index: 1
 }
 
 .footerContainer {
@@ -93,48 +96,11 @@ Footer {
     transform: translateX(5px);
 }
 
-.newsletterForm {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-.newsletterInput {
-    padding: 0.8rem 1rem;
-    border: none;
-    border-radius: 6px;
-    background-color: rgba(255,255,255,0.1);
-    color: var(--heading);
-    width: 80%;
-    margin-left: 5px;
-}
-
-.newsletterInput::placeholder {
-    color: var(--sub-headings);
-}
-
-.newsletterButton {
-    background-color: var(--pop-up);
-    color: var(--pop-up-text);
-    border: none;
-    padding: 0.8rem 1.5rem;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    font-weight: 600;
-    width: fit-content;
-}
-
-.newsletterButton:hover {
-    background-color: var(--heading);
-    color: var(--footer);
-}
-
 .socialIcons {
     display: flex;
     gap: 1.5rem;
     margin-top: 1rem;
-    color: var(--pop-up);
+    color: #D9D9D9;
 }
 
 .socialIcon {   
@@ -154,7 +120,12 @@ Footer {
     padding-top: 1.5rem;
     border-top: 1px solid rgba(255, 255, 255, 0.2);
     font-size: 0.9rem;
-    color: var(--font-colour);
+}
+.footerBottomtext{
+    color: var(--background);;
+}
+a{
+    color: #C4C4C4;
 }
 
 @media (max-width: 768px) {

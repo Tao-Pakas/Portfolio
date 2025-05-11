@@ -9,7 +9,7 @@ function Projects(){
             title: "Project 1",
             tools: ["React", "Figma", "Python"],
             description: "this is the description "
-        }
+        },
     ];
 
     return(

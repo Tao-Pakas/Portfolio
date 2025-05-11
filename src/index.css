@@ -13,4 +13,10 @@
 
   max-width: 100vw;
   overflow-x: hidden;
+  height: fit-content;
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }

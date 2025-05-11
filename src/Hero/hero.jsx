@@ -19,8 +19,8 @@ function HeroSection() {
         const x = e.clientX - left;
         const y = e.clientY - top;
 
-        const rotateX = ((y / height) - 0.5) * 10; // Reduced rotation for better UX
-        const rotateY = ((x / width) - 0.5) * 10;
+        const rotateX = ((y / height) - 0.5) * 20;
+        const rotateY = ((x / width) - 0.5) * 20;
 
         card.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.03)`;
         card.style.transition = 'transform 0.1s ease-out';

@@ -12,7 +12,7 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 function Footer() {
     return (
         <section id="contact">
-        <Footer className={style.footer}>
+        <footer className={style.footer}>
             <div className={style.footerContainer}>
                 {/* Quick Links */}
                 <div className={style.footerSection}>
@@ -30,40 +30,30 @@ function Footer() {
                 <div className={style.footerSection}>
                     <h3 className={style.footerHeading}>Contact</h3>
                     <ul className={style.footerLinks}>
-                        <li><a href="mailto:contact@example.com">contact@example.com</a></li>
-                        <li><a href="tel:+1234567890">+1 (234) 567-890</a></li>
-                        <li>123 Street, City</li>
-                        <li>Country</li>
+                        <li><a href="mailto:taonashe87@gmail.com">taonashe87@gmail.com</a></li>
+                        <li><a href="tel:+263783425833">+263 78 342 5833</a></li>
+                        <li>Masasa Park , Harare</li>
+                        <li>Zimbabwe</li>
                     </ul>
+                    
+                </div>
+
+                <div className={style.footerSection}>
+                    <h3 className={style.footerHeading}>Social Links</h3>
                     <div className={style.socialIcons}>
                         <a href="#"><FontAwesomeIcon icon={faLinkedinIn} className={style.socialIcon} /></a>
                         <a href="#"><FontAwesomeIcon icon={faGithub} className={style.socialIcon} /></a>
                         <a href="#"><FontAwesomeIcon icon={faTwitter} className={style.socialIcon} /></a>
                         <a href="#"><FontAwesomeIcon icon={faEnvelope} className={style.socialIcon} /></a>
+                        <a href="#"><FontAwesomeIcon icon={faFacebookF} className={style.socialIcon} /></a>
                     </div>
-                </div>
-
-                {/* Newsletter */}
-                <div className={style.footerSection}>
-                    <h3 className={style.footerHeading}>Stay Updated</h3>
-                    <form className={style.newsletterForm}>
-                        <input 
-                            type="email" 
-                            placeholder="Your email address" 
-                            className={style.newsletterInput}
-                            required
-                        />
-                        <button type="submit" className={style.newsletterButton}>
-                            Subscribe
-                        </button>
-                    </form>
                 </div>
             </div>
 
             <div className={style.footerBottom}>
-                <p>© {new Date().getFullYear()} Taonashe Pakachena. All rights reserved. | Built with React</p>
+                <p className={style.footerBottomtext}>© {new Date().getFullYear()} Taonashe Pakachena. All rights reserved. | Built with React</p>
             </div>
-        </Footer>
+        </footer>
         </section>
     );
 }
