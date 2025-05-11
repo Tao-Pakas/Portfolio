@@ -1,0 +1,58 @@
+:root{
+    
+    /*green background*/
+    
+    --background: #D9D9D9;
+    --primary: rgb(13, 36, 38);
+    --card: rgb(18, 51, 54);
+    --card-hover: #060F10;
+    --heading: #fff;
+    --font-colour: #f3f3f3;
+    --sub-headings: rgb(217, 217, 217);
+    --button: #071E20;
+
+    /*white/light background*/
+    
+    --text-light: #1A1A1A;
+    --headings-light: #000;
+    
+    /*the popup card*/
+    --pop-up: #C4C4C4;
+    --pop-up-text: #000; 
+
+    /*footer*/
+    
+    --footer: #060F10;
+
+}
+.body{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: start;
+    height: 90vh;
+    background-color: var(--primary);
+    width: 100vw;
+    padding-top: 70px;
+    margin: 0;
+}
+.service{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    width: 100vw;
+}
+h1{
+    padding-left: 5%;
+    color: var(--heading);
+}
+h3{
+    padding-left: 5%;
+    padding-bottom: 20px;
+    color: var(--pop-up);
+}
+.info{
+    color: var(--font-colour);
+}

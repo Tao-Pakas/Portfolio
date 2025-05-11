@@ -1,0 +1,137 @@
+* {
+    padding: 0;
+    margin: 0;
+    color: var(--text-light);
+  }
+  
+  :root {
+    --background: #D9D9D9;
+    --primary: rgb(13, 36, 38);
+    --card: rgb(18, 51, 54);
+    --heading: #fff;
+    --font-colour: #f3f3f3;
+    --sub-headings: rgb(217, 217, 217);
+    --button: #071E20;
+  
+    --text-light: #1A1A1A;
+    --headings-light: #000;
+  
+    --pop-up: #C4C4C4;
+    --pop-up-text: #000;
+  
+    --footer: #060F10;
+  }
+  
+  .aboutme {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    text-align: center;
+    height: 85vh;
+    padding: 0 2rem;
+  }
+  
+  .image {
+    width: fit-content;
+    margin-left: 10%;
+    border: 1px solid var(--button);
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+  }
+  
+  .image img {
+    height: 300px;
+    width: 300px;
+    padding: 20px;
+  }
+  
+  .info {
+    text-align: start;
+    width: 50vw;
+    padding-right: 7%;
+  }
+  
+  .head {
+    padding-bottom: 10px;
+    color: var(--headings-light);
+    padding-left: 0;
+  }
+  
+  .titles {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-grow: 1;
+    width: 40%;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  
+  .activeTab {
+    border-bottom: 2px solid var(--button);
+    color: var(--button);
+  }
+  
+  button {
+    margin-top: 20px;
+    height: 30px;
+    width: 150px;
+    background-color: var(--button);
+    color: var(--font-colour);
+    border: none;
+    border-radius: 20px;
+    transition: ease-in-out 200ms;
+    cursor: pointer;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  button:hover {
+    background-color: var(--footer);
+    color: var(--pop-up);
+    transition: ease-in-out 200ms;
+    border-style: none;
+  }
+  
+  h3 {
+    font-family: 'Courier New', Courier, sans-serif;
+    font-display: swap;
+    transform: translateY(2px);
+    color: var(--button);
+    transition: ease-in-out 200ms;
+  }
+  
+  h3:hover {
+    color: var(--headings-light);
+    transform: translateY(0);
+    transition: ease-in-out 200ms;
+  }
+  
+  @media (max-width: 768px) {
+    .aboutme {
+      flex-direction: column;
+      height: auto;
+      padding: 2rem 1rem;
+    }
+  
+    .image {
+      margin-left: 0;
+      margin-bottom: 20px;
+    }
+  
+    .info {
+      width: 90vw;
+      padding-right: 0;
+    }
+  
+    .titles {
+      width: 100%;
+      justify-content: space-around;
+    }
+  }
+  

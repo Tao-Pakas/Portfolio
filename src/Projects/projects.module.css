@@ -1,0 +1,108 @@
+:root{
+    
+    /*green background*/
+    
+    --background: #D9D9D9;
+    --primary: rgb(13, 36, 38);
+    --card: rgb(18, 51, 54);
+    --heading: #fff;
+    --font-colour: #f3f3f3;
+    --sub-headings: rgb(217, 217, 217);
+    --button: #071E20;
+
+    /*white/light background*/
+    
+    --text-light: #1A1A1A;
+    --headings-light: #000;
+    
+    /*the popup card*/
+    --pop-up: #C4C4C4;
+    --pop-up-text: #000; 
+
+    /*footer*/
+    
+    --footer: #060F10;
+
+}
+section{
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+}
+.heading{
+    color: #000;
+    padding-left: 0%;
+}
+.subHeading{
+    padding-left: 0;
+    color: var(--text-light);
+    animation: none;
+}
+.projectsContainer{
+    width: 100vw;
+    height: auto;
+    margin: 5%;
+}
+.cardsContainer {
+    width: 100vw;
+    height: auto;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-auto-columns: auto;
+    gap: 15px;
+}
+.projectCard{
+    width: 300px;
+    height: 420px;
+    background-color: rgba(0,0,0,0);
+    transform: translateY(5px);
+    transition: ease-in-out 200ms;
+    cursor: pointer;
+}
+.projectCard:hover{
+    transform: translateY(0);
+    transition: ease-in-out 200ms;
+}
+.pic{
+    height: 350px;
+    width: 100%;
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+}
+.projectDescription{
+    width: 100%;
+    height: 70px;
+    position: relative;
+    background-color: var(--button);
+}
+.descriptiontext{
+    opacity: 0;
+    position: absolute;
+    background-color: hsla(185, 64%, 8%, 0.3);
+    width: 100%;
+    height: 360px;
+    bottom: 100%;
+    color: var(--font-colour);
+    transition: ease-in-out 200ms;
+}
+.projectDescription:hover .descriptiontext{
+    opacity: 1;
+    transition: ease-in-out 200ms;
+}
+.textD{
+    font-size: 1.5rem;
+    color: var(--font-colour);
+    padding: 0;
+    margin: 10px;
+}
+.textD:hover{
+    color: var(--font-colour);
+}
+span{
+    color: var(--font-colour);
+    margin: 10px;
+}
