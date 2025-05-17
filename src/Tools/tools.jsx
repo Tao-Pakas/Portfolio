@@ -18,7 +18,7 @@ function Tools() {
   ];
 
   const skills = [
-    { name: "Web Development", level: 70 },
+    { name: "Web Development", level: 50 },
     { name: "UI/UX Design", level: 70 },
     { name: "Database Design", level: 30 },
     { name: "Mobile Apps", level: 25 },

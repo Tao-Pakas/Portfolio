@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import pic from '../assets/images/Tao.svg';
-import cv from '../assets/cv/Maintanane plan.pdf'; // Make sure the CV exists at this path
+import cv from "/assets/cv/Taonashe Pakachena.pdf";
 import style from './about.module.css';
 
 function AboutMe() {
@@ -60,34 +60,34 @@ function AboutMe() {
 
   return (
     <section id="about">
-    <div className={style.aboutme}>
-      <div className={style.image}>
-        <img src={pic} alt="My profile" />
-      </div>
-      <div className={style.info}>
-        <h1 className={style.head}>About Me!</h1>
-        <div className={style.titles}>
-          <h3
-            className={activeSection === 'Who i am' ? style.activeTab : ''}
-            onClick={() => setActiveSection('Who i am')}
-          >
-            Who I Am
-          </h3>
-          <h3
-            className={activeSection === 'personal' ? style.activeTab : ''}
-            onClick={() => setActiveSection('personal')}
-          >
-            Personal Info
-          </h3>
+      <div className={style.aboutme}>
+        <div className={style.image}>
+          <img src={pic} alt="My profile" />
         </div>
-        <div className={style.content}>{renderContent()}</div>
-        <a href={cv} download>
-          <button className={style.downloadBtn}>
-            Download CV
-          </button>
-        </a>
+        <div className={style.info}>
+          <h1 className={style.head}>About Me!</h1>
+          <div className={style.titles}>
+            <h3
+              className={activeSection === 'Who i am' ? style.activeTab : ''}
+              onClick={() => setActiveSection('Who i am')}
+            >
+              Who I Am
+            </h3>
+            <h3
+              className={activeSection === 'personal' ? style.activeTab : ''}
+              onClick={() => setActiveSection('personal')}
+            >
+              Personal Info
+            </h3>
+          </div>
+          <div className={style.content}>{renderContent()}</div>
+          <a href={cv} download="Taonashe_CV.pdf">  {/* Added explicit filename */}
+            <button className={style.downloadBtn}>
+              Download CV
+            </button>
+          </a>
+        </div>
       </div>
-    </div>
     </section>
   );
 }
